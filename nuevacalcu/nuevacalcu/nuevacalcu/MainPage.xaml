@@ -8,9 +8,37 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="TbNumeros" Margin="5,50,5,15"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="85"/>
+                <RowDefinition Height="85"/>
+                <RowDefinition Height="85"/>
+                <RowDefinition Height="85"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnsiete" Text="7" Grid.Column="0" Grid.Row="0" Clicked="btnsiete_Clicked"/>
+            <Button x:Name="btnocho" Text="8" Grid.Column="1" Grid.Row="0" Clicked="btnocho_Clicked"/>
+            <Button x:Name="btnnueve" Text="9" Grid.Column="2" Grid.Row="0" Clicked="btnnueve_Clicked"/>
+            <Button x:Name="btndiv" Text="/" Grid.Column="3" Grid.Row="0" Clicked="btndiv_Clicked"/>
+            <Button x:Name="btncuatro" Text="4" Grid.Column="0" Grid.Row="1" Clicked="btncuatro_Clicked"/>
+            <Button x:Name="btncinco" Text="5" Grid.Column="1" Grid.Row="1" Clicked="btncinco_Clicked"/>
+            <Button x:Name="btnseis" Text="6" Grid.Column="2" Grid.Row="1" Clicked="btnseis_Clicked"/>
+            <Button x:Name="btnmult" Text="*" Grid.Column="3" Grid.Row="1" Clicked="btnmult_Clicked"/>
+            <Button x:Name="btnuno" Text="1" Grid.Column="0" Grid.Row="2" Clicked="btnuno_Clicked"/>
+            <Button x:Name="btndos" Text="2" Grid.Column="1" Grid.Row="2" Clicked="btndos_Clicked"/>
+            <Button x:Name="btntres" Text="3" Grid.Column="2" Grid.Row="2" Clicked="btntres_Clicked"/>
+            <Button x:Name="btnresta" Text="-" Grid.Column="3" Grid.Row="2" Clicked="btnresta_Clicked"/>
+            <Button x:Name="btncero" Text="0" Grid.Column="0" Grid.Row="3" Clicked="btncero_Clicked"/>
+            <Button x:Name="btnborrar" Text="DEL" Grid.Column="1" Grid.Row="3" Clicked="btnborrar_Clicked"/>
+            <Button x:Name="btnigual" Text="=" Grid.Column="2" Grid.Row="3" Clicked="btnigual_Clicked"/>
+            <Button x:Name="btnsuma" Text="+" Grid.Column="3" Grid.Row="3" Clicked="btnsuma_Clicked"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>
